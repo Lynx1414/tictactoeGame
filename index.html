@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylerps.css">
+    <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+    <nav>
+        <h1>website</h1>
+        <hr>
+        <h2>Online Games</h2>
+        <hr>
+        <!-- <ul>
+            <li><a href="../RGP GAME/index.html" title="Accueil">Home</a></li>
+            <li><a href="../tic-tac-toe/tic-tac-toe.html" title="Tic Tac Toe">Jeu 2</a></li>
+             <li><a href="../RGP GAME/index.html" title="RPG">Jeu 3</a></li>
+        </ul> -->
+      </nav>
+<article>
+   <header>
+        <img src="./assetRPS/rockpaperscissors.webp" alt="" width="200px" title="Click on me to start" onclick="startGame()">
+        <h2> Rock Paper Scissors</h2>
+    </header>
+
+        <main>
+            <h2>The battle between <span class="play">You</span> and <span class="comp">The machine</span> can start</h2>
+            <section class="choices">
+                <div>
+                    <h2>You <span class="player play"></span></h2>
+                    <button id="rock" onclick="play('rock')"> <img src="./assetRPS/rock.webp" alt="poing fermé" width="100px"></button><button id="paper" onclick="play('paper')"><img src="assetRPS/paper.webp" alt="main ouverte" width="100px"></button><button id="scissors" onclick="play('scissors')"><img src="assetRPS/scissors.webp" alt="doigts ciseaux" width="100px"></button>
+                </div>
+                <div class="result">
+                    <h2>VS</h2>
+                    <span class="winner"></span>
+                </div>
+                 <div class="machine">
+                    <h2>Computer <span class="computer comp"></span></h2>
+                    <img src="./assetRPS/rock.webp" alt="poing fermé" width="100px"><img src="./assetRPS/paper.webp" alt="main ouverte" width="100px"><img src="assetRPS/scissors.webp" alt="doigts ciseaux" width="100px">
+                </div>
+            </section>
+        
+             <section class="scores">
+                 <div class="playerScore">
+                     <p>0</p>
+                </div>
+                <div class="score">
+                     <h2>Scores</h2>
+                </div>
+                 <div class="computerScore">
+                     <p>0</p>
+                </div>
+             </section>
+        </main>
+</article>
+
+<footer>
+    <span>Copyright © - tous droits réservés </span>
+    <div class="icones">
+      <a href="#"><img src="./assetRPS/mail-enveloppe.webp" alt="enveloppe mail" width="30px"></a>
+      <a href="#"><img src="./assetRPS/icons-twitter.webp" alt="logo twitter oiseau" width="30px"></a>
+      <a href="#"><img src="./assetRPS/facebook.webp" alt="lettre f pour facebook" width="30px"></a>
+    </div>
+    <div></div>
+  </footer>
+
+
+    <script src="game.js" async></script>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Mina&family=Poppins&display=swap');
+
+/* font-family: 'Mina', sans-serif;
+font-family: 'Poppins', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: 'Mina', sans-serif;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+/* NAV___________________________________________________________ */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0.5em; */
+  box-sizing: border-box;
+  box-shadow: inset 0px -20px rgb(0, 94, 255);
+  filter: grayscale(0.6);
+}
+
+nav>ul {
+  display: flex;
+}
+
+nav>ul>li {
+  list-style-type: none;
+  margin: 0.8em;
+  font-size: 1.8em;
+}
+
+li>a {
+  text-decoration: none;
+  color: black;
+  transition-property: all;
+}
+
+li>a:hover {
+  color: orange;
+  overflow: hidden;
+  cursor: grab;
+}
+
+hr {
+  height: 55px;
+}
+
+.play{
+  color: rgb(0, 72, 255);
+  text-transform: uppercase;
+}
+
+.comp{
+  color: #e98800;
+  text-transform: uppercase;
+}
+
+button{
+  border: none;
+  margin-right: 15px;
+  background-color: transparent;
+}
+
+button:disabled, img.disabled{
+  opacity: 0.2;
+}
+
+#rock, #paper, #scissors{
+  cursor: pointer;
+}
+
+button img{
+  border-radius: 20%;
+  border: 5px solid rgb(0, 72, 255);
+}
+
+.machine img{
+  margin-right: 15px;
+  background-color: transparent;
+  border-radius: 20%;
+  border:#e98800 5px solid;
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 2% auto;
+  width: 50vw;
+  flex-grow: 1;
+}
+
+article{
+  width: 88vw;
+  height: 80vh;
+  margin: 0 auto;
+  background-image: linear-gradient(180deg, #FBAB7E 0%, #F7CE68 79%, #1578dc 100%);
+  filter: brightness(1.2);
+  border-radius: 1%;
+  margin-bottom: 2%;
+}
+
+header>h2{
+  display: inline;
+  padding: 0 10px;
+  margin: 5% auto;
+}
+
+header>img{
+  margin-top: 15px;
+}
+
+header >img:hover{
+  cursor: pointer;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: normal;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.winner{
+  visibility: hidden;
+  text-transform: uppercase;
+  border-radius: 0% 35% 0% 35%;
+  filter: brightness(1.2);
+  padding: 15px;
+  font-size: 2em;
+}
+
+.choices, .scores{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 25px 0;
+  width: 100%;
+}
+h2{
+  text-align: center;
+  margin: 20px auto;
+}
+
+.scores p{
+  font-size: 2.5em;
+  font-weight: bolder;
+}
+
+.playerScore p{
+  color:rgb(0, 72, 255);
+
+}
+
+.computerScore p{
+  color: #e98800;
+
+}
+/* FOOTER_______________________________________________________ */
+footer {
+  background-color: orange;
+  opacity: 0.7;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  filter: grayscale(0.1);
+}
+
+.icones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+footer>span {
+  margin: 15px;
+  font-size: 1.3em;
+}
+
+.icones>a {
+  margin: 4px;
+  padding-right: 3em;
+  font-size: 2px;
+}
